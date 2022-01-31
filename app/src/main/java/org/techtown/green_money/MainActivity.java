@@ -41,12 +41,6 @@ public class MainActivity extends AppCompatActivity {
         FrameLayout fl1 = (FrameLayout)findViewById(R.id.fl1);
         cl.add(new ImageButton(this));
         cl.get(cl.size()-1).setImageResource(R.drawable.apple);
-        cl.get(cl.size()-1).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //다이얼로그 띄우기(연결)
-            }
-        });
         fl1.addView(cl.get(cl.size()-1), 300,300);
         cl.get(cl.size()-1).setX((float) (Math.random() * (fl1.getWidth()) / 1.5));
         cl.get(cl.size()-1).setY((float) (Math.random() * (fl1.getHeight() / 2)));
@@ -59,3 +53,5 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+
+
